@@ -33,12 +33,7 @@ public class Home {
 	public void SearchWord(String Word) {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(SearchTxtBox));
-		
-		SearchTxtBox.click();	
-		SearchTxtBox.clear();
 		SearchTxtBox.sendKeys(Word);
-		
-		//driver.findElement(By.cssSelector("#searchInput")).sendKeys(Word);
 		SearchTxtBox.submit();
 	}
 	//Select English Version
