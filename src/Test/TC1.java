@@ -19,13 +19,13 @@ public class TC1 {
 		TaylorSwift taylorswift = new TaylorSwift(driver);
 		
 		home.SearchWord("Taylor Swift");
-		home.SelectEnglishVersion();
+		//home.SelectEnglishVersion();
 		taylorswift.ValidateStudioAlbums();
 	}
 	
 	@BeforeTest
 	public void BeforeTest() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32_latest\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
