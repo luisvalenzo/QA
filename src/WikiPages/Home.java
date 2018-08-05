@@ -38,6 +38,8 @@ public class Home {
 	}
 	//Select English Version
 	public void SelectEnglishVersion() {
-		EnglishLink.click();
+		if(driver.findElements(By.linkText("English")).size()!=0) {
+			EnglishLink.click();
+		}
 	}
 }
